@@ -22,13 +22,13 @@ void main(){
                 }
                 break;
             case 2 :
-                if(last==-1) {
+                if(last==front) {
                     printf("Array is empty");
                     printf("\n------------------------\n");
                 }
                 else {
                     last--;
-                    for (int i = -1; i <= last; i++)
+                    for (int i = 0; i <= last; i++)
                     {
                         array[i]=array[i+1];
                     }
@@ -52,7 +52,7 @@ void print(int last,int array[last]){
 
     printf("\tThe array is\n");
 
-    for (int i = -1; i <= last; i++)
+    for (int i = 0; i <= last; i++)
         printf("%d\t",array[i]);
     printf("\n------------------------\n");
 }
